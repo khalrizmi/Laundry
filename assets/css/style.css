@@ -1,0 +1,395 @@
+.modal-content   {
+    background-color:  #fff;
+}
+.modal-header   {
+    background: #fff url('../img/headbar.jpg') no-repeat top center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding:  16px 16px;
+    color:  #FFF;
+    border-bottom: 1px double #1b4075;
+}
+.modal-content ,   .panel ,   .form-control ,   .btn ,   .navbar   {
+    border-radius:   0;
+}
+
+.alert {
+    border-radius: 0;
+    border: none;
+}
+
+body   {
+    background: #fff url('../img/bgz.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.container   {
+    padding:   0;
+}
+
+
+.panel-custom   {
+    border-color:  #1d437b;
+}
+.panel-custom .panel-heading   {
+    background: #fff url('../img/headbar.jpg') no-repeat top center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.panel-custom .panel-body  {
+}
+.panel-heading  {
+    border-radius:  0;
+}
+
+
+
+.counter-plus   {
+    background:   #337AB7;
+    color:   #fff;
+}
+.counter-minus   {
+    background:   #d9534f;
+    color:   #fff;
+}
+
+
+/* =====================
+/* custom icon */ 
+/* ===================== */
+.spin   {
+    -webkit-animation:  spin 1000ms infinite linear;
+    animation:  spin 1000ms infinite linear;
+}
+@-webkit-keyframes spin   {
+    0%   {
+        -webkit-transform:  rotate(0deg);
+        transform:  rotate(0deg);
+    }
+    100%   {
+        -webkit-transform:  rotate(359deg);
+        transform:  rotate(359deg);
+    }
+}
+@keyframes spin   {
+    0%   {
+        -webkit-transform:  rotate(0deg);
+        transform:  rotate(0deg);
+    }
+    100%   {
+        -webkit-transform:  rotate(359deg);
+        transform:  rotate(359deg);
+    }
+}
+
+/* =====================
+/* Toggle Styles */
+/* ===================== */
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    overflow: hidden;
+}
+
+#wrapper.toggled {
+    overflow: hidden;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 220px;
+}
+
+#page-content-wrapper {
+    position: absolute;
+    padding: 15px;
+    width: 100%;  
+    overflow-x: hidden; 
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: relative;
+    margin-right: 0px; 
+}
+
+
+/* =====================
+/* Sidebar Styles */
+/* ===================== */
+#sidebar-wrapper {
+    z-index: 1;
+    position: fixed; 
+    left: 220px;
+    top: 0;
+    height: 100%;
+    margin-left: -220px;
+    overflow-y: overlay;
+    background: #fff url('../img/bgz.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    box-shadow: 1px 1px 10px 0 #333;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.sidebar-profile {
+    padding: 10px 25px;
+    border-bottom: 1px dashed #1b4075;
+}
+.sidebar-profile .sidebar-profile-image img {
+    width: 100px;
+    height: 100px;
+}
+.sidebar-profile .sidebar-profile-info {
+    margin-top: 5px;
+    text-align: center;
+}
+.btn-sidebar-menu { 
+    padding:10px 20px 10px 0;
+    margin-top: 20px;
+}
+.btn-sidebar-menu a{
+    color: #efd763;
+    text-decoration: none;
+    font-weight: bold;
+}
+.sidebar-profile .sidebar-head {
+    font-weight: bold;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 220px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 15px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    border-bottom: 1px dashed #1b4075;
+}
+
+.sidebar-nav li a:hover,
+.active {
+    text-decoration: none;
+    background: #333 url('../img/btn.jpg') no-repeat center center;
+    background-size: cover;
+    border-radius: 0;
+    color: #ebd8bc !important;
+}
+
+
+@media(min-width:768px) {
+    .nav-mobile {
+        display: none;
+    }
+    #wrapper {
+        padding-left: 220px;
+    }
+    #wrapper.toggled {
+        padding-left: 0;
+    }
+    #sidebar-wrapper {
+        width: 220px;
+    }
+    #page-content-wrapper {
+        padding: 20px;
+        position: relative;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+    }
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+        padding-left: 220px;
+    }    
+
+}
+
+/* =====================
+navbar custom 
+===================== */
+.navbar-custom {
+ background: #fff url('../img/headbar.jpg') no-repeat top center; 
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
+ border: none;
+}
+.navbar-custom .navbar-brand , .navbar-custom .navbar-brand:hover {
+    color:#fff;
+    font-weight: bold
+}
+
+/* =====================
+Invoice
+===================== */
+.invoice-title h2, .invoice-title h3 {
+    display: inline-block;
+}
+
+.table > tbody > tr > .no-line {
+    border-top: none;
+}
+
+.table > thead > tr > .no-line {
+    border-bottom: none;
+}
+
+.table > tbody > tr > .thick-line {
+    border-top: 2px solid;
+}
+
+/* =====================
+Form input hitung
+===================== */
+
+.login-signup {
+  padding: 0;
+}
+
+.btn-success.hitung {
+  background: #23bab5;
+  border-radius:0;
+  border: 2px solid #23bab5;
+  webkit-transition: all 400ms cubic-bezier(.4,0,.2,1);
+  transition: all 400ms cubic-bezier(.4,0,.2,1);
+}
+
+
+
+a {
+  color: #23bab5;
+}
+
+ul {
+  list-style-type: none;
+}
+
+article[role="login"] {
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 10px rgba(0, 0, 0, 0.24);
+  webkit-transition: all 400ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 400ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 30px 50px;
+  margin-bottom: 20px;
+}
+
+article[role="login"] input[type="submit"] {
+  padding: 10px 15px;
+  font-size: 16px;
+}
+
+article[role="login"]:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 1px 15px rgba(0, 0, 0, 0.23);
+  webkit-transition: all 400ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 400ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.tengah {
+	/*background-color: #000;*/
+	margin: 0 auto;
+}
+
+article[role="login"] h3 {
+  font-size: 26px;
+  font-weight: 300;
+  color: #23bab5;
+  margin-bottom: 20px;
+}
+
+article[role="login"] p {
+  font-size: 16px;
+  padding: 5px 15px;
+}
+
+.nav-tab-holder {
+  padding: 0 0 0 30px;
+  /*float: right;*/
+}
+
+.nav-tab-holder .nav-tabs {
+  border: 0;
+  float: none;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.nav-tab-holder .nav-tabs > li {
+  margin-bottom: -3px;
+  text-align: center;
+  padding: 0;
+  display: table-cell;
+  float: none;
+  padding: 0;
+}
+
+.nav-tab-holder .nav-tabs > li > a {
+  background: #d9d9d9;
+  color: #6c6c6c;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.nav-tab-holder .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+  color: #FFF;
+  background-color: #000;
+  background: url('../img/bgz.jpg');
+  border: 0;
+  border-radius: 0;
+}
+
+
+@media only screen and (max-width: 767px) {
+  .mobile-pull {
+    float: none;
+  }
+
+  .nav-tab-holder {
+    float: none;
+    overflow: hidden;
+  }
+
+  .nav-tabs > li > a {
+    font-size: 13px;
+    font-weight: 600;
+    padding: 10px 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .nav-tabs > li {
+    width: 50%;
+  }
+}
