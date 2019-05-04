@@ -1,2 +1,2 @@
 # Laundry
-web sistem laundry dengan codeigniter
+Aplikasi untuk memanajemen suatu perusahaan laundry
